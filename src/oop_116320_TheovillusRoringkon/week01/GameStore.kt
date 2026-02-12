@@ -1,24 +1,12 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week01
 
-fun main(args: Array<String>) {
+fun main() {
+    val gameTitle = "Resident Evil 4 Remake"
+    val price = 600000
 
-    var radius: Double = 7.0
-    var pi: Double = 3.14
-
-
-    var area: Double = pi * radius * radius
-
-
-    println("Radius: " + radius + ", Area: " + area)
-
-
-    checkSize(area)
-}
-
-fun checkSize(area: Double) {
-    if (area > 100) {
-        println("This is a Big Circle")
+    fun calculateDiscount(price: Int): Int = if (price > 500000) {
+        (price * 0.20).toInt()
     } else {
-        println("This is a Small Circle")
+        (price * 0.10).toInt()
     }
 }
