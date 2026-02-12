@@ -9,4 +9,18 @@ fun main() {
     } else {
         (price * 0.10).toInt()
     }
+    fun printReceipt(title: String, originalPrice: Int, finalPrice: Int) {
+        println("=== STRUK PEMBELIAN STEAMKW ===")
+        println("Judul Game  : $title")
+        println("Harga Asli  : Rp $originalPrice")
+        println("Harga Akhir : Rp $finalPrice")
+    }
+
+// Di dalam main():
+    val discount = calculateDiscount(price)
+    printReceipt(
+        title = gameTitle,
+        originalPrice = price,
+        finalPrice = price - discount
+    )
 }
