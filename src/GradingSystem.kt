@@ -20,5 +20,4 @@ fun main() {
     val studentId: String? = null
     val idLength: Int = studentId?.length ?: 0
     println("studentId: $studentId")
-
 }
