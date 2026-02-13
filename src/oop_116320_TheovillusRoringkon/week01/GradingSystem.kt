@@ -1,4 +1,4 @@
-package oop_116320_TheovillusRoringkon.week01
+package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week01
 
 fun main() {
     val name = "John Thor"
