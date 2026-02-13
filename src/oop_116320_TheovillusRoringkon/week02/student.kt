@@ -3,7 +3,7 @@ package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.wee
 class Student (
     val name: String,
     val nim: String,
-    var major: String
+    var major: String,
     var gpa: Double = 0.0,
 ){
     constructor(name: String, nim: String) : this(name, nim, major = "Non-Matriculated") {
