@@ -4,7 +4,6 @@ fun main() {
 
     print("Masukkan nama senjata: ")
     val weaponName = readLine() ?: "Unknown"
-
     val weapon = Weapon(weaponName)
 
     print("Masukkan damage: ")
