@@ -7,7 +7,7 @@ open class Car(brand: String, val numberOfDoors: Int) : Vehicle(brand) {
     }
 
     override fun accelerate() {
-        super.accelerate() // Memanggil logika penambahan kecepatan milik Parent
+        super.accelerate()
         println("Mobil $brand menggunakan transmisi gigi untuk menambah kecepatan.")
     }
 

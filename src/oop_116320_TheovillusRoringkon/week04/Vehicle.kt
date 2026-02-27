@@ -1,7 +1,7 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week04
 
 open class Vehicle (val brand: String) {
-    var speed = Int = 0
+    var speed : Int = 0
 
     open fun accelerate() {
         speed+= 10
