@@ -1,4 +1,7 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week05
 
-class Pegawai {
+abstract class Pegawai(val nama: String) {
+
+    abstract fun bekerja()
+
 }

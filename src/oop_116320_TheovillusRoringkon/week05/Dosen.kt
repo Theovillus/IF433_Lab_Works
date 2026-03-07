@@ -1,4 +1,13 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week05
 
-class Dosen {
+class Dosen(nama: String, val nidn: String) : Pegawai(nama) {
+
+    override fun bekerja() {
+        println("[$nama] sedang menyiapkan materi perkuliahan dan merevisi RPKPS.")
+    }
+
+    fun mengajar() {
+        println("[$nama] sedang mengajar mahasiswa di kelas.")
+    }
+
 }
