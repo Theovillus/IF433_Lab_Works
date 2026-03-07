@@ -36,4 +36,28 @@ fun main() {
     val luasLingkaran = mathHelper.hitungLuas(7.0)
     println("Luas Lingkaran: $luasLingkaran")
 
+    println("\n=== SISTEM PEMBAYARAN ===")
+
+    val ewallet = EWallet("Theo", 50000.0)
+    val creditCard = CreditCard("Theo", 100000.0)
+
+    val daftarMetode: List<PaymentMethod> = listOf(ewallet, creditCard)
+
+    for (metode in daftarMetode) {
+
+        metode.processPayment(75000.0)
+
+
+        if (metode is EWallet) {
+            println("Saldo kurang, melakukan top up...")
+            metode.topUp(50000.0)
+
+            println("Coba pembayaran lagi...")
+            metode.processPayment(75000.0)
+        }
+
+        println("--------------------------")
+    }
+}
+
 }
