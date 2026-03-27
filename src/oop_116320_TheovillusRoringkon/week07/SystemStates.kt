@@ -1,4 +1,10 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week07
 
-class SystemStates {
+enum class AppState {
+    STARTING, RUNNING, STOPPED
+}
+sealed class ApiResponse {
+    data class Success(val data: String) : ApiResponse()
+    data class Error(val message: String) : ApiResponse()
+    object Loading : ApiResponse()
 }
