@@ -1,5 +1,7 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week08
 
+import oop_116320_TheovillusRoringkon.week08.JavaPaymentService
+
 class ApiParser {
     fun parseProduct(rawJson: Map<String, Any?>): Product? {
         val id = requireNotNull(rawJson["id"]) { "API Invalid: Missing ID" } as String
@@ -17,15 +19,14 @@ class ApiParser {
             }
             else -> null
         }
-        fun checkout(product: Product) {
-            val id = when (product) {
-                is Electronic -> product.id
-                is Clothing -> product.id
-            }
-
-
-            val transactionId = JavaPaymentService.processPayment(id)!!
-            println("Checkout Berhasil: $transactionId")
+    }
+    fun checkout(product: Product) {
+        val id = when (product) {
+            is Electronic -> product.id
+            is Clothing -> product.id
         }
+
+        val transactionId = JavaPaymentService.processPayment(id)!!
+        println("Checkout Berhasil: $transactionId")
     }
-    }
+}
