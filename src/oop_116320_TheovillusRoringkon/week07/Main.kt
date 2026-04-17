@@ -58,5 +58,5 @@ fun main() {
     processEvent(BattleState.SafeZone)
     processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
     processEvent(BattleState.LootDropped(upgradedItem))
-    processEvent(BattleState.GameOver("Terkena jebakan racun")
+    processEvent(BattleState.GameOver("Terkena jebakan racun"))
 }
