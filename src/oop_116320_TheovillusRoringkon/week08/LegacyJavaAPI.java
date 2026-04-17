@@ -1,4 +1,7 @@
-package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week08;
+package oop_116320_TheovillusRoringkon.week08;
 
 public class LegacyJavaAPI {
+    public static String fetchServerStatus() {
+        return "SERVER_ONLINE_200_OK";
+    }
 }

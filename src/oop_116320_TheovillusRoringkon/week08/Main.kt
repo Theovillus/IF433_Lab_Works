@@ -1,5 +1,7 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week08
 
+import oop_116320_TheovillusRoringkon.week08.LegacyJavaAPI
+
 fun main() {
     println("=== TEST SAFE CALLS & ELVIS ===")
     val emptyOrder = Order(null, null)
@@ -45,6 +47,11 @@ fun main() {
                 }
             } catch (e: IllegalArgumentException) {
                 println(e.message)
+
+                println("\n=== TEST JAVA INTEROP ===")
+                val javaResponse = LegacyJavaAPI.fetchServerStatus()
+                val statusLength = javaResponse!!.length
+                println("Status dari Java: $javaResponse (Length: $statusLength)")
             }
         }
     }
