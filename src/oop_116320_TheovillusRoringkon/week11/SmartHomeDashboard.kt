@@ -25,4 +25,8 @@ fun main() {
         println("\n=== HASIL PENCARIAN ===")
         println(it.diagnose())
     }
+    with(homeDevices) {
+        println("\n=== DASHBOARD SUMMARY ===")
+        println("Total Perangkat: ${this.size}")
+    }
 }
