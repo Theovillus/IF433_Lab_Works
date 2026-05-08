@@ -2,4 +2,8 @@ package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.wee
 
 fun<T> printData(data: T){
     println ("Data yang diterima:$data")
+
+    fun <T> processData(input: T): T {
+        return input
+    }
 }
