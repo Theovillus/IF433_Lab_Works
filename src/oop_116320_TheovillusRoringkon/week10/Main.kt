@@ -1,6 +1,6 @@
 package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.week10
 
-fun main () {
+fun main(processData: (String) -> Unit) {
     println("=== TEST GENERIC CLASS ===")
         val intBox = Box(100)
         val stringBox = Box ("Generics in kotlin")
@@ -11,4 +11,9 @@ fun main () {
         println ("\n=== TEST MULTIPLE PARAMETERS ===")
         val itemPrice = PairBox("Bitcoin", 65000)
         println("Aset: ${itemPrice.key}, Harga: ${itemPrice.value} USD")
+
+        println("\n=== TEST GENERIC FUNCTIONS ===")
+        printData(3.14)
+        val result = processData("stable coin")
+        println("Hasil Proses : $result")
 }
