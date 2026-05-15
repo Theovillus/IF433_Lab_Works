@@ -1,0 +1,8 @@
+package oop_116320_TheovillusRoringkon.week01.oop_116320_TheovillusRoringkon.Week12
+
+fun main() {
+    println("=== TEST RUNCATCHING ===")
+    val result: Result<Int> = runCatching {
+        "42X".toInt()
+    }
+}
