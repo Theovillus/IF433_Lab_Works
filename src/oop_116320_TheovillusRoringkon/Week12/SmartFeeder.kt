@@ -30,4 +30,10 @@ fun main() {
     } finally {
         println("Siklus pengecekan dispenser pagi selesai.")
     }
+    println("\n--- PEMILIK MENGISI ULANG STOK ---")
+    currentKibbleStock = 1000
+
+    val result = runCatching {
+        dispenseKibble(requestedGram = 30, availableGram = currentKibbleStock, isJammed = false)
+    }
 }
